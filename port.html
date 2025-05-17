@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shanmukvenkat Davuluri | Cybersecurity Analyst</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ---------- BASE ---------- */
+    *,*::before,*::after{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Montserrat',sans-serif;
+      background:#000;
+      color:#f5f5f5;
+      overflow-x:hidden;
+      scroll-behavior:smooth;
+    }
+    a{color:#e10600;text-decoration:none;transition:.3s}
+    a:hover{color:#ff4747}
+
+    /* ---------- HERO ---------- */
+    .hero{
+      min-height:100vh;
+      background:url('pexels-tima-miroshnichenko-5380665.jpg') center/cover no-repeat;
+      display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;
+    }
+    .hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.65)}
+    .hero-content{position:relative;z-index:1;padding:0 1rem}
+    .hero h1{
+      font-family:'Bebas Neue',cursive;
+      font-size:clamp(3rem,8vw,6rem);
+      letter-spacing:4px;margin:0;color:#e10600;
+    }
+    .hero p{font-size:1.25rem;max-width:700px;margin:1rem auto 2rem}
+    .btn{
+      display:inline-block;padding:.9rem 2.4rem;border:2px solid #e10600;
+      color:#e10600;font-weight:600;letter-spacing:1px;margin:0 .5rem;transition:.3s;
+    }
+    .btn:hover{background:#e10600;color:#000}
+
+    /* ---------- SECTIONS ---------- */
+    section{padding:5rem 1.2rem;max-width:1100px;margin:auto}
+    .section-title{
+      font-family:'Bebas Neue',cursive;font-size:2.8rem;letter-spacing:3px;color:#e10600;
+      margin-bottom:2.5rem;text-align:center;position:relative;
+    }
+    .section-title::after{
+      content:'';width:80px;height:4px;background:#e10600;display:block;margin:.6rem auto 0;
+    }
+
+    /* ---------- CARDS ---------- */
+    .card{
+      background:#111;border-left:4px solid #e10600;padding:1.8rem 2rem;margin-bottom:2rem;
+      box-shadow:0 6px 18px rgba(0,0,0,.6);transition:.3s;
+    }
+    .card:hover{transform:translateY(-6px)}
+    .card h3{margin:0 0 .4rem;font-weight:600}
+    .meta{font-size:.9rem;color:#aaa;margin-bottom:.8rem}
+    .card ul{padding-left:1.2rem;margin:0}
+    .card ul li{margin-bottom:.6rem;line-height:1.55}
+
+    /* ---------- SKILLS ---------- */
+    .skills-grid{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;
+    }
+    .skill{
+      background:#1a1a1a;padding:.8rem;text-align:center;font-weight:600;border:2px solid #292929;
+      transition:.3s;
+    }
+    .skill:hover{border-color:#e10600;color:#e10600}
+
+    /* ---------- CONTACT ---------- */
+    .contact-links{
+      display:flex;justify-content:center;gap:2.2rem;font-size:2rem;margin-top:1.4rem;
+    }
+    .contact-links a{color:#f5f5f5;transition:.3s transform}
+    .contact-links a:hover{transform:translateY(-6px);color:#ff4747}
+    .contact-links svg{width:34px;height:34px;fill:currentColor}
+
+    /* ---------- FOOTER ---------- */
+    footer{text-align:center;padding:3rem 1rem;font-size:.9rem;background:#0c0c0c;color:#777}
+
+    /* ---------- ANIMATIONS ---------- */
+    .fade{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s ease}
+    .fade.show{opacity:1;transform:translateY(0)}
+
+    @media(max-width:600px){
+      .hero p{font-size:1rem}
+      .btn{padding:.8rem 1.8rem;font-size:.9rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Shanmukvenkat&nbsp;Davuluri</h1>
+    <p>Cybersecurity Analyst&nbsp;&bull;&nbsp;Penetration Tester&nbsp;&bull;&nbsp;Defender of Digital Frontiers</p>
+    <a href="shanmuk_venkat_resume.pdf" target="_blank" class="btn">VIEW&nbsp;RÉSUMÉ</a>
+    <a href="#contact" class="btn">CONTACT ME</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- ABOUT -->
+  <section id="about" class="fade">
+    <h2 class="section-title">About&nbsp;Me</h2>
+    <p style="max-width:800px;margin:auto;font-size:1.05rem;line-height:1.7">
+      I’m a cybersecurity graduate student at Quinnipiac University with hands‑on expertise in incident response, vulnerability assessment, and penetration testing across enterprise and government infrastructures. I live for red‑team adrenaline and blue‑team precision—turning potential threats into hardened defenses.
+    </p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="fade">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="card">
+      <h3>Tata Consultancy Services</h3>
+      <p class="meta">Cybersecurity Analyst &nbsp;|&nbsp; Jun 202 – Dec 2023 · Hyderabad</p>
+      <ul>
+        <li>Led proactive monitoring &amp; incident response for 150+ servers and endpoints.</li>
+        <li>Executed 80+ vulnerability assessments—slashing critical risk 65 %.</li>
+        <li>Scripted automation that cut response time 40 % and enriched SIEM alerts.</li>
+        <li>Trained 200+ employees, reducing phishing incidents 70 %.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Indian Space Research Organization (ISRO)</h3>
+      <p class="meta">Penetration Tester (Intern) &nbsp;|&nbsp; Aug 2022 – Nov 2022 · Sriharikota</p>
+      <ul>
+        <li>Conducted full‑scope pentests on mission‑critical launch systems.</li>
+        <li>Lowered attack surface 40 % by collaborating on remediation roadmaps.</li>
+        <li>Introduced secure coding checklists—50 % vuln reduction release‑to‑release.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Nineleaps</h3>
+      <p class="meta">SOC Analyst (Intern) &nbsp;|&nbsp; Mar 2022 – Jun 2022 · Bangalore</p>
+      <ul>
+        <li>Monitored SIEM alerts, improving MTTR 30 % via threat‑driven playbooks.</li>
+        <li>Optimized detection rules—cut false positives 25 %.</li>
+        <li>Mentored junior analysts, boosting team efficiency 20 %.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="fade">
+    <h2 class="section-title">Tech&nbsp;Stack</h2>
+    <div class="skills-grid">
+      <span class="skill">Splunk</span><span class="skill">Metasploit</span><span class="skill">Burp&nbsp;Suite</span>
+      <span class="skill">Kali&nbsp;Linux</span><span class="skill">Wireshark</span><span class="skill">Nmap</span>
+      <span class="skill">Hashcat</span><span class="skill">AWS&nbsp;Security&nbsp;Hub</span><span class="skill">Cisco&nbsp;Firepower</span>
+      <span class="skill">Pen‑Testing</span><span class="skill">Incident&nbsp;Response</span><span class="skill">Cloud&nbsp;Security</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="fade">
+    <h2 class="section-title">Projects</h2>
+    <div class="card">
+      <h3>Virtual&nbsp;Voice&nbsp;Assistant</h3>
+      <p>A Python‑driven assistant combining speech recognition, NLP, and secure IoT control—answering questions, managing schedules, and automating tasks via encrypted channels.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="fade">
+    <h2 class="section-title">Education</h2>
+    <div class="card">
+      <h3>Quinnipiac University</h3>
+      <p class="meta">M.S. Cybersecurity · Sep 2022 – May 2024</p>
+    </div>
+    <div class="card">
+      <h3>JNTU Anantapur</h3>
+      <p class="meta">B.Tech Electronics &amp; Communication · Aug 2019 – May 2023</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade">
+    <h2 class="section-title">Contact</h2>
+    <p>Let’s secure the future together—reach out below.</p>
+    <div class="contact-links">
+      <a href="mailto:shanmukvenkat234@gmail.com" aria-label="Email">&#9993;</a>
+
+      <!-- LinkedIn SVG -->
+      <a href="https://www.linkedin.com/in/shanmuk-venkat-020006247" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-340a53.86 53.86 0 1 1 53.86-53.86 53.86 53.86 0 0 1-53.85 53.86zm384 340h-92.68V302.4c0-34.7-.7-79.3-48.29-79.3-48.3 0-55.7 37.7-55.7 76.6V448h-92.7V148.9h89v40.8h1.3a97.5 97.5 0 0 1 87.8-48.3c93.8 0 111.1 61.8 111.1 142.3V448z"/></svg>
+      </a>
+
+      <!-- GitHub SVG -->
+      <a href="https://github.com/Shanmukvenkat" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3 .7-3.6-1.3-3.6-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.4.9.1-.7.4-1.2.7-1.5-2.4-.3-5-1.2-5-5.4 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1a10.2 10.2 0 0 1 5.4 0c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.7 1.1 2.9 0 4.2-2.6 5.1-5 5.4.4.3.8 1 .8 2v3c0 .3.2.7.8.6A12 12 0 0 0 12 .5"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Shanmukvenkat Davuluri — Built with passion &amp; caffeine.
+</footer>
+
+<script>
+  /* Current year */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* Fade‑in on scroll */
+  const observer = new IntersectionObserver((entries,obs)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('show');
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:.15});
+  document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
